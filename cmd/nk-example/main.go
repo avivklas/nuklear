@@ -47,16 +47,16 @@ func main() {
 
 	ctx := nk.NkPlatformInit(win, nk.PlatformInstallCallbacks)
 
-	/*
+	
 	atlas := nk.NewFontAtlas()
 	nk.NkFontStashBegin(&atlas)
-	sansFont := nk.NkFontAtlasAddFromBytes(atlas, MustAsset("assets/FreeSans.ttf"), 16, nil)
-	// sansFont := nk.NkFontAtlasAddDefault(atlas, 16, nil)
+	//sansFont := nk.NkFontAtlasAddFromBytes(atlas, MustAsset("assets/FreeSans.ttf"), 16, nil)
+	sansFont := nk.NkFontAtlasAddDefault(atlas, 16, nil)
 	nk.NkFontStashEnd()
 	if sansFont != nil {
 		nk.NkStyleSetFont(ctx, sansFont.Handle())
 	}
-	*/
+	
 
 	exitC := make(chan struct{}, 1)
 	doneC := make(chan struct{}, 1)
