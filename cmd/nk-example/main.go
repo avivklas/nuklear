@@ -93,7 +93,7 @@ func gfxMain(win *glfw.Window, ctx *nk.Context, state *State) {
 
 	// Layout
 	bounds := nk.NkRect(50, 50, 230, 250)
-	update := nk.NkBegin(ctx, "Demo", bounds, nil)
+	update := nk.NkBegin(ctx, "Demo", bounds, nk.WindowBorder)
 
 	if update > 0 {
 		nk.NkLayoutRowStatic(ctx, 30, 80, 1)
